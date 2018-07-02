@@ -25,7 +25,7 @@ Erick Andres Perez-Alday, PhD , Yin Li-Pershing, BS, Larisa Tereshchenko, MD, Ph
 
 
  
--### Test file
+### Test file
 -Test files (.mat) are provided for testing. Sampling rate 500 Hz. Amplitude resolution 1 µV.
 
 
