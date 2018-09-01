@@ -3,14 +3,14 @@ Heart Vector Origin Point Detection and Representative Median Beat construction
 
 
  ## Table of Content
-   - Heart Vector Origin Point Detection method
-   - Median beat construction algorithm
+   - Heart Vector Origin Point Detection method (will add after manuscript in press)
+   - Median beat construction algorithm (will add after manuscript in press)
    - Heart Vector Origin Point MATLAB Code
    - Median beat construction MATLAB Code
    - Heart Vector origin point accuracy assessment visual aid (viewer) MATLAB Code
-   - Test files for median beat construction
-   - Test files for the heart vector origin point detection
-   - Test files for the viewer
+   - Test file for median beat construction
+   - Test file for the heart vector origin point detection (median beat) is generated as an output of median beat construction 
+   - Test file for the viewer is generated as an output of origin point detection
 
 
    
