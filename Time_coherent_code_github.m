@@ -1,5 +1,5 @@
 %
-% Median beat calculation code V.1.1
+% Time-coherent global XYZ Median beat calculation code V.1.1
 % Erick Andres Perez Alday, PhD, <perezald@ohsu.edu>
 % Larisa Tereshchenko, MD, PhD, < tereshch@ohsu.edu >
 % Last update:  August 1st, 2018
