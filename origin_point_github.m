@@ -41,7 +41,7 @@ file_path        = fullfile(path_name,file_name);
 A= load(file_path);
 
 %% Create Results folder
-Results_folder = [path_name, '/', 'Results', '/'];
+Results_folder = [path_name, '/', 'Origin_point_results', '/'];
 if (exist(Results_folder,'file') ~= 7)
     mkdir (Results_folder);
 end
