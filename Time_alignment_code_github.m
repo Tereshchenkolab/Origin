@@ -5,13 +5,14 @@
 % Last update:  August 1st, 2018
 
 
+
 clear 
 clc
 close all
 warning('OFF');
-%delete(gcp('nocreate'))
 
-
+% Description: calculate the median beat from XYZ leads and generate an image of XYZ
+% median and Vectormagnitude beat based on norm of the XYZ leads
 % Input:
 %      1. sampling frequency in HZ
 %      2. matlab file containing the following:
@@ -49,7 +50,8 @@ file_path        = fullfile(path_name,file_name);
 matfile          = matfile(file_path)
 
 %% Create Results folder
-Results_folder = [path_name, '/', 'Results', '/'];
+Results_folder = [path_name, '/', 'Median_beat_results', '/'];
+
 if (exist(Results_folder,'file') ~= 7)
     mkdir (Results_folder);
 end
@@ -97,16 +99,24 @@ else
     c_fin=1;
 end
 
+%% Calculate the absolute maximum first derivative adjacent to each R peak on the X lead.
 
-%% Separate the each beat in the X, Y, and Z leads. Each beat is centered on the R peak detected on the X lead.
+I_dv=zeros(R_no,1);
 
+for ii=c_int:R_no-c_fin
+	[~,I_dv_temp]=max(abs(diff(XYZ_O(Rx(ii)-199:Rx(ii)+200,1))));
+	I_dv(ii)=Rx(ii)-(199-I_dv_temp);
+end
+
+
+%% Separate the each beat in the X, Y, and Z leads. Each beat is centered on Maximum dv/dt detected.
 
 bct=1;
 for ii=c_int:R_no-c_fin
-                            
-        Beats_x_T(:,bct)=XYZ_O(Rpeaks(ii,1)-((Beat_length/2)-1):Rpeaks(ii,1)+(Beat_length/2),1);
-        Beats_y_T(:,bct)=XYZ_O(Rpeaks(ii,1)-((Beat_length/2)-1):Rpeaks(ii,1)+(Beat_length/2),2);
-        Beats_z_T(:,bct)=XYZ_O(Rpeaks(ii,1)-((Beat_length/2)-1):Rpeaks(ii,1)+(Beat_length/2),3);
+                           
+        Beats_x_T(:,bct)=XYZ_O(I_dv(ii)-((Beat_length/2)-1):I_dv(ii)+(Beat_length/2),1);
+        Beats_y_T(:,bct)=XYZ_O(I_dv(ii)-((Beat_length/2)-1):I_dv(ii)+(Beat_length/2),2);
+        Beats_z_T(:,bct)=XYZ_O(I_dv(ii)-((Beat_length/2)-1):I_dv(ii)+(Beat_length/2),3);
         
         bct=bct+1;
 end
@@ -145,7 +155,7 @@ saveas(ECG3,strcat(Results_folder,file_ID{1},'_Median_beat.jpg'),'jpg');
 %% ================== Write Calculated Variables to .mat file ==================
 Mat_folder = [Results_folder 'Mat Files' '/'];
 if (exist(Mat_folder) == 0)
-mkdir (Mat_folder);
+	mkdir (Mat_folder);
 end
 
 % Save to a new MAT file
