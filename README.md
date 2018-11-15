@@ -3,8 +3,8 @@ Heart Vector Origin Point Detection and Representative Median Beat construction
 
 
  ## Table of Content
-   - Heart Vector Origin Point Detection method (will add after manuscript in press)
-   - Time-coherent global XYZ Median beat construction algorithm (will add after manuscript in press)
+   - Heart Vector Origin Point Detection method 
+   - Time-coherent global XYZ Median beat construction algorithm 
    - Heart Vector Origin Point MATLAB Code
    - Time-coherent global XYZ Median beat construction MATLAB Code
    - Heart Vector origin point accuracy assessment visual aid (viewer) MATLAB Code
