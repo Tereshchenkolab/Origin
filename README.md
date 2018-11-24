@@ -31,4 +31,4 @@ Erick Andres Perez-Alday, PhD , Yin Li-Pershing, BS, Larisa Tereshchenko, MD, Ph
 
 
  ### Manuscript to reference:
-Erick Perez-Alday, PhD; Yin Li-Pershing, BS; Aron Bender, MD; Christopher Hamilton, BA; Jason Thomas, BS; Kyle Johnson, BS; Tiffany Lee, BS; Ryan Gonzales, BS; Aaron Li; Kelley Newton, MS; Larisa G. Tereshchenko, MD, PhD. Importance of the Heart Vector Origin Point Definition for an ECG analysis: The Atherosclerosis Risk in Communities (ARIC) study. Computers in Biology and Medicine, in press.
+Erick Perez-Alday, PhD; Yin Li-Pershing, BS; Aron Bender, MD; Christopher Hamilton, BA; Jason Thomas, BS; Kyle Johnson, BS; Tiffany Lee, BS; Ryan Gonzales, BS; Aaron Li; Kelley Newton, MS; Larisa G. Tereshchenko, MD, PhD. Importance of the Heart Vector Origin Point Definition for an ECG analysis: The Atherosclerosis Risk in Communities (ARIC) study. Computers in Biology and Medicine, Volume 104, January 2019, Pages 127-138. https://authors.elsevier.com/a/1Y65~2OYcnwGB
