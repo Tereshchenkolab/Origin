@@ -18,7 +18,9 @@ Heart Vector Origin Point Detection and Representative Median Beat construction
 Origin Point and median beat calculation code V.1
 Erick Andres Perez-Alday, PhD , Yin Li-Pershing, BS, Larisa Tereshchenko, MD, PhD.
 
- See pdf files in the repository for Origin Point and Median Beat calculation methods.
+### The Heart Vector Origin Point Definition and Global XYZ Time-coherent median beat construction
+
+ See pdf files in the repository for the Heart Vector Origin Point Definition and Time-Coherent Beat calculation methods.
  
  ### GEH MATLAB Code
 -See .m files in the repository for Origin Point detection, Median Beat Construction, and Viewer. Test files are provided (.mat) for algorithm testing.
