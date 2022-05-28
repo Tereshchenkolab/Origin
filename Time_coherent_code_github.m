@@ -104,8 +104,8 @@ end
 I_dv=zeros(R_no,1);
 
 for ii=c_int:R_no-c_fin
-	[~,I_dv_temp]=max(abs(diff(XYZ_O(Rx(ii)-199:Rx(ii)+200,1))));
-	I_dv(ii)=Rx(ii)-(199-I_dv_temp);
+	[~,I_dv_temp]=max(abs(diff(XYZ_O(Rpeaks(ii,1)-199:Rpeaks(ii,1)+200,1))));
+	I_dv(ii)=Rpeaks(ii,1)-(199-I_dv_temp);
 end
 
 
